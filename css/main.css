@@ -1,5 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Arima:wght@100..700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
+
+#card-container {
+    display: flex;
+    justify-content: space-around;
+    background-color: #3dccc7;
+}
+ .card {
+    font-family: "Arima", system-ui;
+    background-color: #73e2a7;
+    width: 420px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px;
+    border-radius: 20px;
+
+ }
+ .card img {
+    width: 400px;
+    height: 350px;
+ }
+ .card button {
+    background-color:#9ceaef ;
+    font-family: "Arima", system-ui;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px;
+    border-bottom-left-radius: 0 0 20px 20px; /* Apenas o canto inferior esquerdo arredondado */
+   
+ }
