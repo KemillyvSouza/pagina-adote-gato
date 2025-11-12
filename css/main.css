@@ -1,4 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Arima:wght@100..700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titan+One&display=swap');
+:root{
+   /*Variáveis de cor*/
+--corPrincipal: #f7a072ff;
+--corSecundaria: #eddea4ff;
+--corTerciaria: #0fa3b1ff;
+--destaque: #b5e2faff;
+--baby-powder: #f9f7f3ff;
+--preto: #172026;
+--branco: #F2F2F2;
+/*Variáveis de cor*/
+
+/*Variáveis de fonte*/
+--fontePrincipal: "Arima", system-ui;
+--fonteGigante:200px;
+--fonteMedia:50px; /* sem ";" a variável não funciona gata! */
+--fonteChamativa:"Titan One", sans-serif;
+
+/*Variáveis de fonte*/
+
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -6,13 +28,27 @@
 }
 
 #card-container {
-    display: flex;
-    justify-content: space-around;
-    background-color: #3dccc7;
+   display: flex;
+   justify-content: space-around;
+   background-color: var(--destaque);
 }
+
+ .banner{
+   display: grid;
+   grid-template-rows: repeat(12,1fr);
+   grid-template-columns: repeat(6, 12fr);
+   background-color:var(--corTerciaria);
+ }
+
+ .banner img{
+   grid-column:2/6 ;
+   grid-row: 2/6;
+ }
+
+
  .card {
     font-family: "Arima", system-ui;
-    background-color: #73e2a7;
+    background-color: var(--corPrincipal);
     width: 420px;
     display: flex;
     flex-direction: column;
@@ -20,21 +56,61 @@
     align-items: center;
     margin: 10px;
     border-radius: 20px;
+    font-size: var(fonteGigante);
 
  }
+
+ .card:hover {
+   box-shadow: var(--corTerciaria) 5px 7px;
+}
+
  .card img {
     width: 400px;
     height: 350px;
  }
  .card button {
-    background-color:#9ceaef ;
+    width: 100px;
+    padding: 5px;
+    border: var(--corPrincipal) 10px solid; 
+    border-radius: 0 0 5px 5px;
     font-family: "Arima", system-ui;
-    width: 400px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    margin: 10px;
-    border-bottom-left-radius: 0 0 20px 20px; /* Apenas o canto inferior esquerdo arredondado */
-   
+    font-size: 20px;
+    box-shadow: var(--preto);
  }
+ .banner {
+   display: grid;
+   grid-template-rows: repeat(6, 1fr);
+   grid-template-columns: repeat(12, 1fr);
+   background-color: var(--CorPrincipal);
+}
+
+.banner .texto-foco{
+   grid-column: 8/12;
+   grid-row: 2/5;
+   text-align: center;
+   font-family: var(--fonteChamativa);
+   font-size: var(--fonteGigante);
+}
+
+.banner .texto-secundario{
+   grid-column: 8/12;
+   grid-row: 5/6;
+   text-align: center;
+   font-size: var(--fonteMedia);
+}
+
+/* replicando banner com flex */
+
+
+.banner2{
+   display: flax;
+}
+.banner2 img{
+   display: flax;
+}
+.banner2{
+   display: flax;
+}
+.banner2{
+   display: flax;
+}
