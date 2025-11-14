@@ -9,6 +9,7 @@
 --baby-powder: #f9f7f3ff;
 --preto: #172026;
 --branco: #F2F2F2;
+--destaqueEscuro: rgb(3, 117, 128);
 /*Variáveis de cor*/
 
 /*Variáveis de fonte*/
@@ -60,9 +61,10 @@
 
  }
 
- .card:hover {
+ .card:hover{
    box-shadow: var(--corTerciaria) 5px 7px;
-}
+ }
+
 
  .card img {
     width: 400px;
@@ -101,7 +103,6 @@
 
 /* replicando banner com flex */
 
-
 .banner2{
    display: flax;
 }
@@ -114,3 +115,58 @@
 .banner2{
    display: flax;
 }
+
+/* ----------------------------------------------------------------------------------- */
+
+
+
+footer{
+   color: aliceblue;
+   background-color: var(--destaqueEscuro);
+}
+.container-footer{
+   
+   margin: 50px 204px 50px 204px;
+}
+
+#layer1-footer{
+   display: flex;
+   justify-content: space-between;
+}
+
+.logo-footer{
+   height: 25px;
+}
+
+.container-footer p a{
+   text-decoration: none;
+}
+
+
+/* ----------------------------------------------------------------------------------- */
+@media screen and (max-width: 430px){
+   .header{
+      background-color: var(--corPrincipal);
+   }
+
+   .banner {
+       display: flex;
+       flex-direction: column;
+       width: 430px;
+   }
+
+   .banner2 {
+       display: flex;
+       flex-direction: column;
+       width: 430px;
+   }
+
+   .container {
+       flex-direction: column;
+       align-items: center;  
+   } 
+
+   .barra-navegacao{
+      background-color: var(--corPrincipal)!important;
+   }
+}   
